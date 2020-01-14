@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Student.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Student"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel HorizontalAlignment="Center">
+        <Button x:ConnectionId='2' FontSize="15" Margin="10"                    Padding="15" Width="200">ADD STUDENT</Button>
+        <Button x:ConnectionId='3' FontSize="15" Margin="10"                    Padding="15" Width="200">SEARCH STUDENT</Button>
+    </StackPanel>
+</Page>
+

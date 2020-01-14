@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="Student.Pages.GetStudent"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Student.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+    <TextBlock FontSize="30" TextAlignment="Center" Margin="30" FontWeight="ExtraBold">ADD STUDENT</TextBlock>
+    <StackPanel>
+        <ListView x:Name="ListStudent">
+                <Button FontSize="20" Margin="10" Click="Delete">Delete</Button>
+                <StackPanel>
+                    <ComboBox x:Name="colorComboBox" Width="200"
+              Header="Status" PlaceholderText="Pick a color"
+              SelectionChanged="ColorComboBox_SelectionChanged">
+                        <x:String>Active</x:String>
+                        <x:String>Deactive</x:String>
+                    </ComboBox>
+
+                    <Rectangle x:Name="colorRectangle" Height="30" Width="100"
+               Margin="0,8,0,0" HorizontalAlignment="Left"/>
+                </StackPanel>
+            </ListView>
+    </StackPanel>
+    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+        <Button FontSize="20" Margin="10" Click="Get_List">Get List</Button>
+        <Button FontSize="20" Margin="10" Click="GotoMenu">Go to Menu</Button>
+    </StackPanel>
+    </StackPanel>
+</Page>
